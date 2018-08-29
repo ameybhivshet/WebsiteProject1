@@ -60,13 +60,13 @@ port-image {
 
 /* Back to top button */
 .back-to-top {
-  bottom: 60px;
-  color: #ffc20e;
+  bottom: 10px;
+  color: #000;
   display: none;
   font-size: 20px;
   line-height: 50px;
   position: fixed;
-  right: 20px;
+  right: 5px;
   text-align: center;
   text-decoration: none;
   width: 55px;
@@ -78,7 +78,7 @@ port-image {
   transition: all 0.5s ease 0s;
   height: 55px;
   border-radius: 50%;
-  background: #333;
+  background: #ffc20e;
 }
 
 @media (max-width: 768px) {
@@ -88,14 +88,14 @@ port-image {
 }
 
 .back-to-top:focus {
-  background: #ffc20e;
-  color: #000;
+  background: #000;
+  color: #ffc20e;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #ffc20e;
-  color: #000;
+  background: #000;
+  color: #ffc20e;
 }
 /*section padd*/
 .section-padding{
@@ -240,6 +240,12 @@ ul.social-icons {
     background-color: #d34836;
       color:#ffffff;
 } */
+
+#addressinfo
+{
+
+  padding-top:10px;
+}
 address{
 
   font-family: 'Montserrat',sans-serif;
@@ -346,7 +352,7 @@ body {
     background-color: #fff;
 
 }
-#ctid,.cticon{
+#ctid .cticon,#ctid >h2{
 
   color: #fff;
 }

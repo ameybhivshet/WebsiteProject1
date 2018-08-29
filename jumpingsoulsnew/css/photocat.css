@@ -1,5 +1,5 @@
-#works figcaption a{border:1px solid #fff;margin-top:5%;display: inline-block;color: #fff;}
-#works figcaption a:hover{text-decoration: none;padding: 0 3em;}
+#works figcaption a{display: inline-block;color: #fff;}
+#works figcaption a:hover{border:3px solid #fff;text-decoration: none;padding: 0 25px;}
 /*works*/
 
 
@@ -36,7 +36,7 @@ border-color:  #333;
 border-width: medium;
 width: 25%;
 }
-#works .cticon{
+#works.cticon{
 
   color: #333;
 }
@@ -173,26 +173,31 @@ figure.effect-oscar h4 {
 	transform: translate3d(0,100%,0);
 }
 
-figure.effect-oscar figcaption::before,
+/* figure.effect-oscar figcaption::before,
 figure.effect-oscar p {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(0);
 	transform: scale(0);
+} */
+
+figure.effect-oscar:hover a{
+	/* -webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0); */
+	/* opacity: 1; */
+	/* -webkit-transform: scale(1);
+	transform: scale(1); */
+border:3px solid #fff;
+padding: 0 20px;
 }
 
-figure.effect-oscar:hover h4 {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-figure.effect-oscar:hover figcaption::before,
+/* figure.effect-oscar:hover figcaption::before,
 figure.effect-oscar:hover p {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
-}
+} */
 
 figure.effect-oscar:hover figcaption {
 	background-color: rgba(0,0,0,0.8);
