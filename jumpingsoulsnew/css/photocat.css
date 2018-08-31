@@ -78,8 +78,7 @@ width: 25%;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+
 }
 
 .grid figure figcaption::before,
