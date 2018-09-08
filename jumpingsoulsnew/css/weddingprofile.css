@@ -1,4 +1,5 @@
 
+
 .wthree_title_agile{
 	text-align:center;
 	position:relative;
@@ -161,6 +162,16 @@ padding-right:  8%;
   }
 
 
+
+	  @media (min-width: 1025px) {
+	#wedimg img{
+		display: block;
+		  width: 100vw;
+		  height: 100vh;
+		  object-fit: cover;
+
+	  }
+}
   /* @media (max-width: 414px){
 
     .wthree_title_agile p:before, .wthree_title_agile p:after {

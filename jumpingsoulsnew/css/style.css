@@ -57,6 +57,38 @@ port-image {
     margin-bottom: 0px;
 } */
 
+/* .videoContainer video {
+    width: 100%;
+    height: auto;
+} */
+
+
+
+
+.carousel-control {
+   height:0;
+   top:50%;
+}
+.navbar-right{
+
+
+  float: right;
+position: absolute;
+right: 25%;
+}
+.navbar-left{
+
+
+  float: left;
+position: absolute;
+left: 25%;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
 
 /* Back to top button */
 .back-to-top {
@@ -292,7 +324,7 @@ a:link{text-decoration:none;}
 {
 touch-action: manipulation;
 }
-.demo{ background: #000; }
+.demo{ background:#000;}
 .testimonial{
     padding: 35px 50px;
     margin: 0 20px 30px;
@@ -438,7 +470,7 @@ a:focus {
 }
 
 .nav.navbar-nav {
-   background-color: rgba(255,255,255,.4);
+   background-color: rgba(255,255,255,.1);
 
 
 }
@@ -450,7 +482,7 @@ a:focus {
 .navbar-custom ul.nav li a {
 	font-size: 12px;
 	letter-spacing: 1px;
-    color: #444;
+    color: #ffc20e;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -659,7 +691,7 @@ hr {
 	width:100%;
 	position:relative;
 	/* background: url(../img/bg1.jpg) no-repeat top center; */
-    background-size: cover;
+    /* background-size: cover; */
     height: auto;
 }
 
@@ -1128,6 +1160,12 @@ Parallax
 /* Media queries */
 
 @media(min-width:769px) {
+  video {
+
+      width: 100%;
+  height: auto;
+  background: black;
+}
 
     .navbar {
         padding: 20px 0;
@@ -1155,12 +1193,12 @@ Parallax
     }
     .navbar-brand {
 
-      background-image: url("../images/js2.jpg");
+      background-image: url("../images/logo.png");
 
 
         background-size: contain;
-      height:30px;
-      width: 120px;
+      height:auto;
+      width: 190px;
     margin-left: 7px;
     margin-top: 10px;
       /* font-size: 18px;
@@ -1178,7 +1216,13 @@ Parallax
 
 }
 @media (max-width:768px) {
-
+  video {
+    padding-top: 7%;
+  padding-bottom: 0;
+      width: 100%;
+  height: auto;
+  background: black;
+}
 	.team.boxed-grey {
 		margin-bottom: 30px;
 	}
@@ -1188,11 +1232,11 @@ Parallax
 	}
   .navbar-brand {
 
-    background-image: url("../images/js2.jpg");
+    background-image: url("../images/logo.png");
 
 
       background-size: contain;
-    height:30px;
+    height:auto;
     width: 120px;
 margin-left: 7px;
 margin-top: 10px;
@@ -1233,11 +1277,11 @@ margin-top: 10px;
 
   .navbar-brand {
 
-    background-image: url("../images/js2.jpg");
+    background-image: url("../images/logo.png");
 
 
       background-size: contain;
-    height:20px;
+    height:auto;
     width: 120px;
 margin-left: 7px;
 margin-top: 10px;
@@ -1247,31 +1291,66 @@ margin-top: 10px;
 
 
 }
- @media (max-width:345px) {
+ /* @media (max-width:345px) {
   #ctid{
 
 
     font-size: 30px;
   }
-  /*
+} */
+
+@media (max-width:1024px) {
+
+
+/* .carousel,.item,.active{height:100%;}
+.carousel-inner{height:50%;} */
+
+/* #carouselimg {
+  height: 100%;
+  width: 100%;
+
+  } */
+  /* video {
+    margin-top: 10%;
+padding-bottom: 0;
+      width: 100%;
+  height: auto;
+  background: white;
+  }*/
+}
+  @media (min-width:1025px) {
+
+
+  .carousel,.item,.active{height:100%;}
+  .carousel-inner{height:100%;}
+
+  #carouselimg {
+  height: 100%;
+  width: 100%;
+
+    }
+
+  }
+
   @media (max-width:500px) {
-    #ctid{
+    #ctid h2{
 
 
       font-size: 29px;
     }
+
+  }
     @media (max-width:450px) {
-      #ctid{
+      #ctid h2{
 
 
         font-size: 27px;
       }
+    }
       @media (max-width:400px) {
-        #ctid{
+        #ctid h2{
 
 
           font-size: 26px;
         }
-} */
-
 }
