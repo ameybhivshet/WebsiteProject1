@@ -20,6 +20,16 @@
     }
   });
 
+  // var prevScrollpos = window.pageYOffset;
+  // window.onscroll = function() {
+  // var currentScrollPos = window.pageYOffset;
+  //   if (prevScrollpos > currentScrollPos) {
+  //     document.getElementById("navbar").style.top = "0";
+  //   } else {
+  //     document.getElementById("navbar").style.top = "-100px";
+  //   }
+  //   prevScrollpos = currentScrollPos;
+  // }
   //jQuery for page scrolling feature - requires jQuery Easing plugin
   $(function() {
 
@@ -118,11 +128,25 @@ $('video').on('stop pause ended', function (e) {
     $("#intro").carousel();
 });
 
+$(window).load(function() {
 
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 768) {
+            $(".navbar").removeClass("navlogo").addClass("navbar-brand");
+    }
 
+    $(window).resize(function () {
 
-
+        if (viewportWidth < 768) {
+            $(".navbar").removeClass("navlogo").addClass("navbar-brand");
+        }
+    });
+});
 
 
 }
 )(jQuery);
+
+
+
+ // Add class if screen size equals
