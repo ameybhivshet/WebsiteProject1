@@ -1,27 +1,4 @@
-/*
-.wthree_title_agile{
-	text-align:center;
-	position:relative;
-}
-.wthree_title_agile p{
-	font-size:2em;
-	    color: #fc3158;
-	position:relative;
-}
-.wthree_title_agile p:before,.wthree_title_agile p:after{
-	    content: '';
-    background: #212121;
-    height: 2px;
-    width: 14%;
-    position: absolute;
-    top:50%;
-}
-.wthree_title_agile p:before{
-	left:41%;
-}
-.wthree_title_agile p:after{
-	right:41%;
-} */
+
 
 #wedding.cticon{
 
@@ -34,8 +11,13 @@
 #weddinggallery{
 
 
+    width: 100%;
+     min-height:100%;
+
+    position: relative;
 
   padding-top:50px;
+  margin-bottom: 5%;
 }
 
 #weddinggallery h2{
@@ -210,3 +192,20 @@ font-size: 20px;
   }
 
 }
+
+/* @media  (max-width: 1500px) {
+
+  .site-footer {
+
+    padding: 30px 0;
+
+
+   width: 100%;
+
+  }
+  .site-footer p {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+} */

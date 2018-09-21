@@ -4,6 +4,18 @@
 
 
 
+#works{
+
+	width: 100%;
+	 min-height:100%;
+
+	position: relative;
+
+
+margin-bottom: 10%;
+margin-top: 10%;
+
+}
 #works h2
 {
 
@@ -42,8 +54,10 @@ width: 25%;
 }
 #categorygalley{
 
+margin-top:5%;
+	/* padding-top: 70px;
+	position: relative; */
 
-	padding-top: 70px;
 }
 .grid {
 	position: relative;

@@ -2,7 +2,16 @@
 #worksanimation figcaption a:hover{border:3px solid #fff;text-decoration: none;padding: 0 25px;}
 /*worksanimation*/
 
+#worksanimation{
 
+
+	margin-bottom: 5%;
+
+	  width: 100%;
+	   min-height:100%;
+
+	  position: relative;
+}
 
 #worksanimation h2
 {

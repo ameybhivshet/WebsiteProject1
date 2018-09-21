@@ -1,4 +1,12 @@
+#videoplayersection{
 
+  margin-bottom: 5%;
+
+    width: 100%;
+     min-height:100%;
+
+    position: relative;
+}
 
 
   .story-content

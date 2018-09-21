@@ -62,13 +62,6 @@
 
 
 
-  $('#intro').carousel({
-        interval: 8000,
-        pause: false
-  }).on('slide.bs.carousel', function () {
-  document.getElementById('player').pause();
-});
-
 $('#player').on('ended', function () {
   if (document.exitFullscreen) {
        document.exitFullscreen(); // Standard
@@ -128,22 +121,41 @@ $('video').on('stop pause ended', function (e) {
     $("#intro").carousel();
 });
 
-$(window).load(function() {
+  $('#intro').carousel({
+        interval: 8000,pause:false
 
-    var viewportWidth = $(window).width();
-    if (viewportWidth < 768) {
-            $(".navbar").removeClass("navlogo").addClass("navbar-brand");
-    }
-
-    $(window).resize(function () {
-
-        if (viewportWidth < 768) {
-            $(".navbar").removeClass("navlogo").addClass("navbar-brand");
-        }
-    });
+  }).on('slide.bs.carousel', function () {
+  document.getElementById('player').pause();
 });
 
 
+// $(window).load(function() {
+//
+//     var viewportWidth = $(window).width();
+//     if (viewportWidth < 768) {
+//             $(".navbar").removeClass("navlogo").addClass("navbar-brand");
+//     }
+//
+//     $(window).resize(function () {
+//
+//         if (viewportWidth < 768) {
+//             $(".navbar").removeClass("navlogo").addClass("navbar-brand");
+//         }
+//     });
+// });
+
+$("#videocover").click(function() {
+    var video = $("#player").get(0);
+    video.play();
+
+    $(this).css("visibility", "hidden");
+
+    return false;
+});
+
+$("#player").bind(" ended", function() {
+    $("#videocover").css("visibility", "visible");
+});
 }
 )(jQuery);
 
