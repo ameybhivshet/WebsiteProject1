@@ -1,4 +1,4 @@
-@media (max-width: 736px)
+@media (max-width: 1200px)
 {
 
 	*
@@ -20,15 +20,15 @@
 
 	h2
 	{
-		font-size: 1.25em;
+		font-size: 40px;
 		letter-spacing: 4px;
 	}
 
 
-/* p{
-	font-size:50px;
+p{
+	font-size:30px;
 
-} */
+}
 
 
 	/* Box */
@@ -117,7 +117,7 @@
 	#header
 	{
 		padding: 6em 0 6em 0;
-	
+
 	}
 
 		#header header
